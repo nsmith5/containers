@@ -34,4 +34,6 @@ root `site-packages`.
 Great question! Do you read the source code of everything you `pip install`
 before you `pip install` it? Yeah me neither. This way I don't have to think to
 hard about it because the packages can only access the directory I'm working
-in.
+in. Checkout
+[this blog post](https://www.nfsmith.ca/articles/containerized_development/)
+for more information.
