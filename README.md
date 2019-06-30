@@ -23,6 +23,12 @@ $ go version            # go running in container!
 go version go1.12.6 linux/amd64
 ```
 
+## Caveats
+
+Python is a little weird. `pip install` stuff with the `--user` flag for
+persistance as the storage volume is mounted in `/root/.local` instead of the
+root `site-packages`.
+
 ## Why
 
 Great question! Do you read the source code of everything you `pip install`
