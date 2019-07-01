@@ -1,2 +1,6 @@
-alias go="podman run --rm -v go:/go -v $PWD:/workspace:z go"
-alias python="podman run -it --rm -v python:/root/.local:z python"
+alias go="podman run --rm -v go:/go -v $PWD:/workspace:z toolbox/go"
+alias python="podman run -it --rm -v python:/root/.local -v $PWD:/workspace:z toolbox/python"
+alias julia="podman run -it --rm -v julia:/root/.julia -v $PWD:/workspace:z toolbox/julia"
+alias java="podman run -it --rm -v $PWD:/workspace:z toolbox/java"
+alias javac="podman run -it --rm -v $PWD:/workspace:z --entrypoint /usr/bin/javac toolbox/java"
+alias mvn="podman run -it --rm -v maven:/root/.m2 -v $PWD:/workspace:z toolbox/maven"
