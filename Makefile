@@ -1,6 +1,6 @@
-all: go python julia java mvn
+all: go python julia java mvn ruby
 
-.PHONY: go python julia java mvn
+.PHONY: go python julia java mvn ruby
 go:
 	podman build -t toolbox/go go
 	podman image prune
@@ -19,4 +19,8 @@ java:
 
 mvn:
 	podman build -t toolbox/maven maven
+	podman image prune
+
+ruby:
+	podman build -t toolbox/ruby ruby
 	podman image prune

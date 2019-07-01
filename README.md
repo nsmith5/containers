@@ -18,7 +18,7 @@ source the shell script.
 
 ```
 $ make go               # or simply 'make' for all SDKs
-$ source containers.sh  # or containers.fish for fish shell
+$ source toolbox.sh     # or toolbox.fish for fish shell
 $ go version            # go running in container!
 go version go1.12.6 linux/amd64
 ```
