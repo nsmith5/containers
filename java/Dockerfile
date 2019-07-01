@@ -1,3 +1,3 @@
-FROM java:8
+FROM openjdk:8-jdk-alpine
 WORKDIR /workspace
 ENTRYPOINT ["/usr/bin/java"]

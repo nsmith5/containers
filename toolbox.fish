@@ -15,7 +15,7 @@ function java
 end
 
 function javac
-    podman run -it --rm -v (pwd):/workspace:z --entrypoint /usr/bin/javac toolbox/java $argv
+    podman run -it --rm -v (pwd):/workspace:z --entrypoint /usr/lib/jvm/java-1.8-openjdk/bin/javac toolbox/java $argv
 end
 
 function mvn

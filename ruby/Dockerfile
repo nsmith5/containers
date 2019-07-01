@@ -1,3 +1,3 @@
-FROM ruby
+FROM ruby:alpine
 WORKDIR "/workspace"
 ENTRYPOINT ["/usr/local/bin/ruby"]

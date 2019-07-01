@@ -1,3 +1,3 @@
-FROM maven:3.6.1-jdk-8
+FROM maven:3-jdk-8-slim
 WORKDIR /workspace
 ENTRYPOINT ["/usr/bin/mvn"]
