@@ -3,7 +3,7 @@ all: go python julia java mvn ruby
 .PHONY: go python julia java mvn ruby all
 install:
 	cp toolbox.fish ~/.config/fish/
-	echo "source toolbox.fish" >> ~/.config/fish/config.fish
+	echo "source ~/.config/fish/toolbox.fish" >> ~/.config/fish/config.fish
 
 go:
 	podman build -t toolbox/go go
